@@ -1,4 +1,4 @@
-package Media::Sort
+package Media::Sort;
 require Exporter;
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(getmedia);
