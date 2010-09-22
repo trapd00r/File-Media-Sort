@@ -67,6 +67,10 @@ sub media_sort {
 
   She will return a list of the sorted media for you.
 
+=head2 EXPORTS
+
+  media_sort()
+
 =head1 AUTHOR
 
 Written by Magnus Woldrich
