@@ -5,7 +5,7 @@ BEGIN {
   use Exporter;
   use vars qw($VERSION @ISA @EXPORT_OK);
 
-  $VERSION = '0.042';
+  $VERSION = '0.043';
   @ISA     = qw(Exporter);
 
   @EXPORT_OK = qw(
@@ -89,6 +89,8 @@ parses that log while this module 'sorts' it before the results are  being sent
 to L<File::PatternMatch> which basically highlights subpatterns in the release
 names for terminal/dzen output.
 
+These modules can be used for arbitary lists of files as well.
+
 =head1 EXPORTS
 
 None by default.
@@ -112,6 +114,8 @@ example. It's even harder trying to match both music videos and regular movies,
 since there's no way what so ever to distinguish them just by looking at the
 filename.
 
+Patches and suggestions B<very welcome>.
+
 =head1 AUTHOR
 
   Magnus Woldrich
@@ -125,8 +129,8 @@ None required yet.
 
 =head1 COPYRIGHT
 
-Copyright 2010, 2011 the File::Media::Sort L</AUTHOR> and L</CONTRIBUTORS> as
-listed above.
+Copyright 2010, 2011 the B<File::Media::Sort>s L</AUTHOR> and L</CONTRIBUTORS>
+as listed above.
 
 =head1 LICENSE
 
