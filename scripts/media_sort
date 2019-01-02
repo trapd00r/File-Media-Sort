@@ -11,6 +11,7 @@ use File::Media::Sort qw(media_sort);
 use Getopt::Long;
 use Pod::Usage;
 use File::Basename;
+use Cwd;
 
 my $opt_type;
 GetOptions(
@@ -19,7 +20,7 @@ GetOptions(
 );
 
 die "Please specify a type with -t\n", unless defined $opt_type;
-my $directory = shift or die "directory to glob?\n";
+my $directory = shift // getcwd();
 
 my @results = map { basename($_); } media_sort($opt_type, glob("$directory/*"));
 
